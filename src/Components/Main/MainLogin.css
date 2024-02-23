@@ -1,0 +1,43 @@
+body {
+  background-image: url(../../assets/batmanMain.jpg);
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.93rem;
+}
+.header img {
+  max-width: 18.06rem;
+}
+
+.section__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28.56rem;
+}
+.section__login button {
+  background-color: #ff0000;
+  min-width: 19.25rem;
+  min-height: 3.62rem;
+  border: none;
+  border-radius: 1.87rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.37rem;
+  font-weight: 500;
+}
+.section__login--text {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 1.25rem;
+}
+
+.section__login--text p:first-child {
+  color: white;
+}
+.section__login--text p:last-child {
+  color: #ff0000;
+}
