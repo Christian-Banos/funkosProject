@@ -1,0 +1,106 @@
+hr {
+  margin: 1rem 1rem 1rem 1rem;
+  max-width: 25.43rem;
+  box-shadow: 5px 5px 10px 1px #000000;
+}
+
+.mainProduct {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+/* Card */
+.mainProduct__card {
+  background-color: #fff6f6;
+  min-width: 11.11rem;
+  min-height: 20.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.37rem;
+  box-shadow: 5px 5px 10px 1px #000000;
+
+  .card__iconHeart {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .card__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card__img img {
+    min-width: 8.31rem;
+    min-height: 11.5rem;
+  }
+
+  .card__DescriptionProduct {
+    font-size: 1.07rem;
+    padding-left: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .card__DescriptionProduct__name {
+      font-weight: bold;
+    }
+  }
+
+  .card__btn {
+    display: flex;
+    justify-content: center;
+    button {
+      min-width: 11.58rem;
+      min-height: 2.43rem;
+      border-radius: 1.87rem;
+      margin: 1rem;
+      background-color: #06aef5;
+      font-weight: 600;
+      border: none;
+    }
+  }
+}
+
+/* Card Pikachu  */
+.pikachu {
+  .card__img {
+    img {
+      max-width: 9.12rem;
+      max-height: 11.9rem;
+    }
+  }
+}
+
+/* Card Sasuke */
+.card__img--sasuke {
+  img {
+    width: 9.12rem;
+    height: 11.9rem;
+  }
+}
+
+/* Card groot */
+.groot {
+  .card__img {
+    img {
+      max-width: 9.12rem;
+      max-height: 11.9rem;
+    }
+  }
+}
+
+/* Btn loadMOre */
+.loadMore {
+  display: flex;
+  justify-content: center;
+  button {
+    min-width: 11.58rem;
+    min-height: 2.43rem;
+    border-radius: 1.87rem;
+    margin: 1rem;
+    background-color: #06aef5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+  }
+}

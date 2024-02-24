@@ -1,17 +1,18 @@
-import "./MainLogin.css";
-import funkoLogo from "../../assets/funkoLogo.png";
+import styles from "./Login.module.css";
+
+import funkoLogo from "../assets/funkoLogo.png";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
     <>
-      <header className="header">
+      <header className={styles.header}>
         <img src={funkoLogo} alt="Logo funkos" />
       </header>
-      <section className="section__login">
+      <section className={styles.section__login}>
         <button type="submit">Login</button>
-        <div className="section__login--text">
+        <div className={styles.section__loginText}>
           <p>don't have an account?</p>
           <p> Sing up</p>
         </div>

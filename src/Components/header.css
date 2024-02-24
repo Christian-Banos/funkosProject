@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+  max-height: 4.06rem;
+  background-color: #000;
+  color: #06aef5;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.37rem;
+  font-weight: bolder;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  min-width: 60%;
+  img {
+    width: 7.1rem;
+    height: 2.59rem;
+  }
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

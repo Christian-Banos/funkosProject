@@ -1,4 +1,5 @@
-import MainLogin from "../../Components/Main/MainLogin";
+import MainLogin from "../../Components/MainLogin";
+import "./index.css";
 
 type Props = {};
 
