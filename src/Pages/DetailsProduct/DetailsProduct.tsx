@@ -1,5 +1,13 @@
+import Header from "../../Components/Header";
+import AdvertisingCard from "../../Components/AdvertisingCard";
+
 const DetailsProduct = () => {
-  return <div>DetailsProduct</div>;
+  return (
+    <>
+      <Header></Header>
+      <AdvertisingCard></AdvertisingCard>
+    </>
+  );
 };
 
 export default DetailsProduct;

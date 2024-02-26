@@ -1,0 +1,147 @@
+.all_page {
+  background-color: #ffffff;
+}
+
+.advertisingCard {
+  max-height: 10.93rem;
+  background-color: #efefef;
+  display: flex;
+
+  img {
+    max-width: 9.25rem;
+    max-height: 9.68rem;
+  }
+
+  .advertisingCard__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    font-size: 1.37rem;
+    font-weight: bolder;
+    color: #000;
+  }
+
+  .advertisingCard__icon {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #06aef5;
+  }
+}
+
+.card__img {
+  max-height: 22.12rem;
+  background-color: #efefef;
+  /* border-top: thin solid black; */
+
+  .card__img--imgAndIcon {
+    /* background-color: #06aef5; */
+    display: flex;
+    justify-content: center;
+
+    :last-child {
+      margin-top: 1rem;
+      font-size: 2.18rem;
+      position: absolute;
+      right: 2rem;
+    }
+  }
+}
+
+.radio-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+.radio-input input {
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+
+.radio-input input:hover {
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.radio-input .circle {
+  position: relative;
+  top: 0.01em;
+  left: -1.3em;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #06aef5;
+  scale: 0;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.radio-input input:checked {
+  box-shadow: none;
+  border: 1px solid yellow;
+}
+
+.radio-input input:checked + .circle {
+  transform: rotate(360deg);
+  scale: 1;
+}
+
+hr {
+  color: gray;
+  box-shadow: none;
+}
+
+.detailsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0.9rem;
+  font-size: 1.25rem;
+
+  .detailsCard__text {
+    :last-child {
+      font-weight: 700;
+    }
+  }
+  .detailsCard__price {
+    display: flex;
+    gap: 1rem;
+    :first-child {
+      background-color: #06aef5;
+      min-width: 9.37rem;
+      min-height: 1.87rem;
+      text-align: center;
+      border-radius: 0.31rem;
+    }
+    :last-child {
+      font-weight: 700;
+    }
+  }
+}
+
+.details__button {
+  display: flex;
+  justify-content: center;
+
+  button {
+    min-width: 24.6rem;
+    min-height: 2.43rem;
+    background-color: #010000;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.37rem;
+    border-radius: 1.87rem;
+  }
+}

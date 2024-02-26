@@ -1,7 +1,7 @@
 import "./header.css";
 import funkoLogo from "../assets/funkoLogo.png";
 
-const Products = () => {
+const Header = () => {
   return (
     <>
       <header className="header">
@@ -24,4 +24,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Header;
