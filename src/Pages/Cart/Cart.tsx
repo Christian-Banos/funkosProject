@@ -1,8 +1,14 @@
+import DetailsCart from "../../Components/DetailsCart";
+import Header from "../../Components/Header";
+import PublicityCard from "../../Components/PublicityCard";
+
 const Cart = () => {
   return (
-    <div>
-      <h1>Cart</h1>
-    </div>
+    <>
+      <Header></Header>
+      <PublicityCard></PublicityCard>
+      <DetailsCart></DetailsCart>
+    </>
   );
 };
 

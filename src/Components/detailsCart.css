@@ -1,0 +1,91 @@
+.all__page {
+  background-color: #ffffff;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.31rem;
+  padding: 1rem;
+}
+
+.data__articles {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.details__articles {
+  display: flex;
+  align-items: center;
+
+  .details__articles--details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    min-width: 13rem;
+    margin: 1rem;
+    img {
+      max-width: 5.62rem;
+      max-height: 3.31rem;
+    }
+    .title__article {
+      font-size: 1.1rem;
+    }
+    .subtitle__article {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  span {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    min-width: 3.1rem;
+    max-height: 2rem;
+    border-radius: 1.31rem;
+  }
+}
+
+.payment {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  .payment--total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .btn-checkout {
+    background-color: #000;
+    color: #ffffff;
+    font-weight: 700;
+    min-width: 15.5rem;
+    min-height: 2.43rem;
+    border-radius: 1.87rem;
+    margin: 1rem auto;
+  }
+
+  .btn-applePay {
+    background-color: #000;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    min-width: 15.5rem;
+    max-height: 2.2rem;
+    margin: 0 auto;
+    line-height: 1rem;
+  }
+}
