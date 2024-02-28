@@ -1,10 +1,13 @@
-import MainLogin from "../../Components/MainLogin";
+import React from "react";
 import "./index.css";
+import MainLogin from "../../Components/MainLogin";
 
-type Props = {};
-
-const Login = ({}: Props) => {
-  return <MainLogin></MainLogin>;
+const Login: React.FC = () => {
+  return (
+    <>
+      <MainLogin />
+    </>
+  );
 };
 
 export default Login;
