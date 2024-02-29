@@ -34,26 +34,25 @@ const MainLogin: React.FC<Props> = ({ isAuthenticated, onAuthenticate }) => {
     setUserForm({ ...userForm, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
     const currentUserName = userForm?.userName;
-    const currentPassword = userForm?.password;
 
-    const loggedUser = users?.find(
-      (element) => element.name === currentUserName
-    );
+    const loggedUser = users?.find((element) => {
+      const currentUserAuthentication = element.name === currentUserName;
+      if (currentUserAuthentication) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    console.log("loggedUser", loggedUser);
 
     if (loggedUser) {
-      if (currentPassword === loggedUser.password) {
-        onAuthenticate(loggedUser.name, loggedUser.password, isLogin);
-        navigate("/");
-      } else {
-        setError(true);
-      }
-    } else {
-      setError(true);
+      navigate("/");
+      return null;
     }
-    console.log(loggedUser);
   };
 
   return (
@@ -79,7 +78,9 @@ const MainLogin: React.FC<Props> = ({ isAuthenticated, onAuthenticate }) => {
             onChange={catchInputValue}
             placeholder="Password"
           />
-          <button type="submit">Login</button>
+          <button type="submit" onClick={() => setIsLogin(!isLogin)}>
+            Login
+          </button>
         </form>
 
         {error && <p className={styles.error}>All fields are required</p>}

@@ -1,0 +1,41 @@
+export const products = [
+  {
+    id: 1,
+    nameAnime: "Marvel",
+    nameProdruc: "Groot",
+    price: 30,
+    urlImage: "../src/assets/funkoGrud.png",
+    quantity: 1,
+  },
+  {
+    id: 2,
+    nameAnime: "Marvel",
+    nameProdruc: "Goku",
+    price: 30,
+    urlImage: "../src/assets/funkoGoku.png",
+    quantity: 1,
+  },
+  {
+    id: 3,
+    nameAnime: "Marvel",
+    nameProdruc: "Superman",
+    price: 30,
+    urlImage: "../src/assets/funkoSuperman.png",
+    quantity: 1,
+  },
+  {
+    id: 4,
+    nameAnime: "Marvel",
+    nameProdruc: "Pikachu",
+    price: 30,
+    urlImage: "../src/assets/funkoPikachu.jpg",
+    quantity: 1,
+  },
+  {
+    id: 1,
+    nameProdruc: "Superman",
+    price: 30,
+    urlImage: "../src/assets/funkoSuperman.png",
+    quantity: 1,
+  },
+];

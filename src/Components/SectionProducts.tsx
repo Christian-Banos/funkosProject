@@ -3,13 +3,11 @@ import funkoGoku from "../assets/funkoGoku.png";
 import pikachu from "../assets/funkoPIkachu.jpg";
 import sasuke from "../assets/funkoSasuke.png";
 import groot from "../assets/funkoGrud.png";
+// import { products } from "../data/products";
 
-type Props = {};
-
-const SectionProduct = ({}: Props) => {
+export const SectionProduct = () => {
   return (
     <>
-      <hr />
       <main className="mainProduct">
         <div className="mainProduct__card goku">
           <div className="card__iconHeart">
@@ -84,3 +82,5 @@ const SectionProduct = ({}: Props) => {
 };
 
 export default SectionProduct;
+
+/* ----------------------------------------------------- */

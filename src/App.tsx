@@ -1,5 +1,5 @@
 /* import "./App.css"; */
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Products from "./Pages/Products/Products";
 import Login from "./Pages/Login/LoginPage";
 import DetailsProduct from "../src/Pages/DetailsProduct/DetailsProduct";
